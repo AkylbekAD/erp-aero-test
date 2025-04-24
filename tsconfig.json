@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "ES2020", // Целевая версия JavaScript
+		"module": "ESNext", // Используем ES-модули
+		"moduleResolution": "Node", // Резолвинг модулей как в Node.js
+		"outDir": "./dist", // Папка для компилированных файлов
+		"strict": true, // Включение строгой типизации
+		"esModuleInterop": true, // Поддержка CommonJS
+		"skipLibCheck": true, // Пропуск проверки типов в библиотеках
+		"forceConsistentCasingInFileNames": true, // Принудительное соблюдение регистра в именах файлов
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"noImplicitAny": true, // Запрет неявного типа any
+		"strictNullChecks": true, // Строгая проверка на null
+		"isolatedModules": true, // Поддержка изолированных модулей
+		"jsx": "react-jsx", // Поддержка JSX (если используете React)
+		"declaration": true, // Генерация файлов .d.ts
+		"sourceMap": true, // Генерация sourcemaps
+		"lib": ["ES2020", "DOM"], // Библиотеки, которые будут доступны
+		"baseUrl": "./src", // Базовый URL для относительных импортов
+		"paths": {
+			"*": ["node_modules/*"] // Путь для типов
+		}
+	},
+	"exclude": ["node_modules", "dist"] // Исключение папок node_modules и dist
+}
